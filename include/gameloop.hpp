@@ -13,8 +13,9 @@ public:
     void init();
     void spawnEnemy();
     bool next(SDL_Event* e);
-    std::vector<Entity> getEntities();
+    std::vector<Entity*> getEntities();
     void setAmmo(int ammo) {player.setAmmo(ammo);}
+    [[nodiscard]] int getAmmo() const {return player.getAmmo();}
     void setHp(int hp) {enemyHp = hp;}
     void setBulletSpeedMultiplier(float multiplier) { bulletSpeedMultiplier = multiplier;}
     void setEnemySpeedMultiplier(float multiplier) {enemySpeedMultiplier = multiplier;}

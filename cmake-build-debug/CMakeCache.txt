@@ -15,10 +15,10 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/addr2line.exe
+CMAKE_ADDR2LINE:FILEPATH=E:/msys64/mingw64/bin/addr2line.exe
 
 //Path to a program.
-CMAKE_AR:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/ar.exe
+CMAKE_AR:FILEPATH=E:/msys64/mingw64/bin/ar.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -28,15 +28,15 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/g++.exe
+CMAKE_CXX_COMPILER:FILEPATH=E:/msys64/mingw64/bin/c++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/gcc-ar.exe
+CMAKE_CXX_COMPILER_AR:FILEPATH=E:/msys64/mingw64/bin/gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/gcc-ranlib.exe
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=E:/msys64/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -57,15 +57,15 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/gcc.exe
+CMAKE_C_COMPILER:FILEPATH=E:/msys64/mingw64/bin/cc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/gcc-ar.exe
+CMAKE_C_COMPILER_AR:FILEPATH=E:/msys64/mingw64/bin/gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/gcc-ranlib.exe
+CMAKE_C_COMPILER_RANLIB:FILEPATH=E:/msys64/mingw64/bin/gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -86,7 +86,7 @@ CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/dlltool.exe
+CMAKE_DLLTOOL:FILEPATH=E:/msys64/mingw64/bin/dlltool.exe
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -113,10 +113,10 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=E:/Maciek/CLion Projects/apacalypse/cmak
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Nowy_folder
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/apacalypse
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/ld.exe
+CMAKE_LINKER:FILEPATH=E:/msys64/mingw64/bin/ld.exe
 
 //make program
 CMAKE_MAKE_PROGRAM:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/ninja/win/x64/ninja.exe
@@ -142,13 +142,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/nm.exe
+CMAKE_NM:FILEPATH=E:/msys64/mingw64/bin/nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/objcopy.exe
+CMAKE_OBJCOPY:FILEPATH=E:/msys64/mingw64/bin/objcopy.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/objdump.exe
+CMAKE_OBJDUMP:FILEPATH=E:/msys64/mingw64/bin/objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -160,10 +160,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=apacalypse
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/ranlib.exe
+CMAKE_RANLIB:FILEPATH=E:/msys64/mingw64/bin/ranlib.exe
 
 //RC compiler
-CMAKE_RC_COMPILER:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/windres.exe
+CMAKE_RC_COMPILER:FILEPATH=E:/msys64/mingw64/bin/windres.exe
 
 //Flags for Windows Resource Compiler during all build types.
 CMAKE_RC_FLAGS:STRING=
@@ -181,7 +181,7 @@ CMAKE_RC_FLAGS_RELEASE:STRING=
 CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/readelf.exe
+CMAKE_READELF:FILEPATH=E:/msys64/mingw64/bin/readelf.exe
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -231,7 +231,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/strip.exe
+CMAKE_STRIP:FILEPATH=E:/msys64/mingw64/bin/strip.exe
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -239,89 +239,11 @@ CMAKE_STRIP:FILEPATH=E:/Maciek/CLion 2023.1.1/bin/mingw/bin/strip.exe
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//mwindows for MinGW
-MINGW32_LIBRARY:STRING=mingw32;-mwindows
-
-//Value Computed by CMake
-Nowy_folder_BINARY_DIR:STATIC=E:/Maciek/CLion Projects/apacalypse/cmake-build-debug
-
-//Value Computed by CMake
-Nowy_folder_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Nowy_folder_SOURCE_DIR:STATIC=E:/Maciek/CLion Projects/apacalypse
-
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
-
-//Path to a library.
-SDL2MAIN_LIBRARY:FILEPATH=E:/libs/SDL/lib/libSDL2main.a
-
-//The directory containing a CMake configuration file for SDL2.
-SDL2_DIR:PATH=E:/libs/SDL/bin
-
-//Path to a file.
-SDL2_IMAGE_INCLUDE_DIR:PATH=E:/libs/SDL/include/SDL2
-
-//Path to a library.
-SDL2_IMAGE_LIBRARY:FILEPATH=E:/libs/SDL/lib/libSDL2_image.dll.a
-
-//Path to a library.
-SDL2_IMAGE_LIBRARY_TEMP:FILEPATH=SDL2_IMAGE_LIBRARY_TEMP-NOTFOUND
-
-//Disable search SDL2_image Library in default path
-SDL2_IMAGE_NO_DEFAULT_PATH:BOOL=OFF
-
-//Custom SDL2_image Library path
-SDL2_IMAGE_PATH:STRING=
-
-//Path to a file.
-SDL2_INCLUDE_DIR:PATH=E:/libs/SDL/include/SDL2
-
-//Where the SDL2 Library can be found
-SDL2_LIBRARY:STRING=mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;E:/libs/SDL/lib/libSDL2.dll.a
-
-//Where the SDL2_mixer headers can be found
-SDL2_MIXER_INCLUDE_DIR:PATH=SDL2_MIXER_INCLUDE_DIR-NOTFOUND
-
-//Where the SDL2_mixer Library can be found
-SDL2_MIXER_LIBRARY:FILEPATH=SDL2_MIXER_LIBRARY-NOTFOUND
-
-//Disable search SDL2_mixer Library in default path
-SDL2_MIXER_NO_DEFAULT_PATH:BOOL=OFF
-
-//Custom SDL2_mixer Library path
-SDL2_MIXER_PATH:STRING=
-
-//Disable search SDL2 Library in default path
-SDL2_NO_DEFAULT_PATH:BOOL=OFF
-
-//Custom SDL2 Library path
-SDL2_PATH:STRING=
-
-//Where the SDL2_ttf headers can be found
-SDL2_TTF_INCLUDE_DIR:PATH=SDL2_TTF_INCLUDE_DIR-NOTFOUND
-
-//Where the SDL2_ttf Library can be found
-SDL2_TTF_LIBRARY:FILEPATH=SDL2_TTF_LIBRARY-NOTFOUND
-
-//Disable search SDL2_ttf Library in default path
-SDL2_TTF_NO_DEFAULT_PATH:BOOL=OFF
-
-//Custom SDL2_ttf Library path
-SDL2_TTF_PATH:STRING=
-
-//The directory containing a CMake configuration file for SDL2_image.
-SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for SDL2_ttf.
-SDL2_ttf_DIR:PATH=SDL2_ttf_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for SDL2ttf.
-SDL2ttf_DIR:PATH=SDL2ttf_DIR-NOTFOUND
+PKG_CONFIG_EXECUTABLE:FILEPATH=E:/msys64/mingw64/bin/pkg-config.exe
 
 //Value Computed by CMake
 apacalypse_BINARY_DIR:STATIC=E:/Maciek/CLion Projects/apacalypse/cmake-build-debug
@@ -331,6 +253,39 @@ apacalypse_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 apacalypse_SOURCE_DIR:STATIC=E:/Maciek/CLion Projects/apacalypse
+
+//Path to a library.
+pkgcfg_lib_SDL2_IMG_SDL2:FILEPATH=E:/msys64/mingw64/lib/libSDL2.dll.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_IMG_SDL2_image:FILEPATH=E:/msys64/mingw64/lib/libSDL2_image.dll.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_IMG_SDL2main:FILEPATH=E:/msys64/mingw64/lib/libSDL2main.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_IMG_mingw32:FILEPATH=E:/msys64/mingw64/lib/libmingw32.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_SDL2:FILEPATH=E:/msys64/mingw64/lib/libSDL2.dll.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_SDL2main:FILEPATH=E:/msys64/mingw64/lib/libSDL2main.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_SDL2:FILEPATH=E:/msys64/mingw64/lib/libSDL2.dll.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_SDL2_ttf:FILEPATH=E:/msys64/mingw64/lib/libSDL2_ttf.dll.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_SDL2main:FILEPATH=E:/msys64/mingw64/lib/libSDL2main.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_TTF_mingw32:FILEPATH=E:/msys64/mingw64/lib/libmingw32.a
+
+//Path to a library.
+pkgcfg_lib_SDL2_mingw32:FILEPATH=E:/msys64/mingw64/lib/libmingw32.a
 
 
 ########################
@@ -417,8 +372,6 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=E:/Maciek/CLion Projects/apacalypse
@@ -491,83 +444,146 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding SDL
-FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;E:/libs/SDL/lib/libSDL2.dll.a][E:/libs/SDL/include/SDL2][v()]
-//Details about finding SDL2
-FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;E:/libs/SDL/lib/libSDL2.dll.a][E:/libs/SDL/include/SDL2][v()]
-//Details about finding SDL2_image
-FIND_PACKAGE_MESSAGE_DETAILS_SDL2_image:INTERNAL=[E:/libs/SDL/lib/libSDL2_image.dll.a][E:/libs/SDL/include/SDL2][v2.6.3()]
-//Details about finding SDL2main
-FIND_PACKAGE_MESSAGE_DETAILS_SDL2main:INTERNAL=[E:/libs/SDL/lib/libSDL2main.a][E:/libs/SDL/include/SDL2][v2.26.5()]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[E:/msys64/mingw64/bin/pkg-config.exe][v1.8.0()]
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-SDL2IMAGE_CFLAGS:INTERNAL=
-SDL2IMAGE_CFLAGS_I:INTERNAL=
-SDL2IMAGE_CFLAGS_OTHER:INTERNAL=
-SDL2IMAGE_FOUND:INTERNAL=
-SDL2IMAGE_INCLUDEDIR:INTERNAL=
-SDL2IMAGE_LIBDIR:INTERNAL=
-SDL2IMAGE_LIBS:INTERNAL=
-SDL2IMAGE_LIBS_L:INTERNAL=
-SDL2IMAGE_LIBS_OTHER:INTERNAL=
-SDL2IMAGE_LIBS_PATHS:INTERNAL=
-SDL2IMAGE_MODULE_NAME:INTERNAL=
-SDL2IMAGE_PREFIX:INTERNAL=
-SDL2IMAGE_STATIC_CFLAGS:INTERNAL=
-SDL2IMAGE_STATIC_CFLAGS_I:INTERNAL=
-SDL2IMAGE_STATIC_CFLAGS_OTHER:INTERNAL=
-SDL2IMAGE_STATIC_LIBDIR:INTERNAL=
-SDL2IMAGE_STATIC_LIBS:INTERNAL=
-SDL2IMAGE_STATIC_LIBS_L:INTERNAL=
-SDL2IMAGE_STATIC_LIBS_OTHER:INTERNAL=
-SDL2IMAGE_STATIC_LIBS_PATHS:INTERNAL=
-SDL2IMAGE_VERSION:INTERNAL=
-//ADVANCED property for variable: SDL2MAIN_LIBRARY
-SDL2MAIN_LIBRARY-ADVANCED:INTERNAL=1
-SDL2_CFLAGS:INTERNAL=
+SDL2_CFLAGS:INTERNAL=-IE:/msys64/mingw64/bin/../include;-IE:/msys64/mingw64/bin/../include/SDL2;-Dmain=SDL_main
 SDL2_CFLAGS_I:INTERNAL=
-SDL2_CFLAGS_OTHER:INTERNAL=
-SDL2_FOUND:INTERNAL=
-//ADVANCED property for variable: SDL2_IMAGE_INCLUDE_DIR
-SDL2_IMAGE_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SDL2_IMAGE_LIBRARY
-SDL2_IMAGE_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SDL2_IMAGE_NO_DEFAULT_PATH
-SDL2_IMAGE_NO_DEFAULT_PATH-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SDL2_IMAGE_PATH
-SDL2_IMAGE_PATH-ADVANCED:INTERNAL=1
-SDL2_INCLUDEDIR:INTERNAL=
-//ADVANCED property for variable: SDL2_INCLUDE_DIR
-SDL2_INCLUDE_DIR-ADVANCED:INTERNAL=1
-SDL2_LIBDIR:INTERNAL=
-//ADVANCED property for variable: SDL2_LIBRARY
-SDL2_LIBRARY-ADVANCED:INTERNAL=1
-SDL2_LIBRARY_TEMP:INTERNAL=mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;mingw32;-mwindows;E:/libs/SDL/lib/libSDL2main.a;E:/libs/SDL/lib/libSDL2.dll.a
+SDL2_CFLAGS_OTHER:INTERNAL=-Dmain=SDL_main
+SDL2_FOUND:INTERNAL=1
+SDL2_IMG_CFLAGS:INTERNAL=-IE:/msys64/mingw64/bin/../include/SDL2;-IE:/msys64/mingw64/bin/../include;-Dmain=SDL_main;-IE:/msys64/mingw64/bin/../include/libpng16;-DHWY_SHARED_DEFINE;-IE:/msys64/mingw64/bin/../include/webp;-DLIBDEFLATE_DLL
+SDL2_IMG_CFLAGS_I:INTERNAL=
+SDL2_IMG_CFLAGS_OTHER:INTERNAL=-Dmain=SDL_main;-DHWY_SHARED_DEFINE;-DLIBDEFLATE_DLL
+SDL2_IMG_FOUND:INTERNAL=1
+SDL2_IMG_INCLUDEDIR:INTERNAL=E:/msys64/mingw64/bin/../include
+SDL2_IMG_INCLUDE_DIRS:INTERNAL=E:/msys64/mingw64/bin/../include/SDL2;E:/msys64/mingw64/bin/../include;E:/msys64/mingw64/bin/../include/libpng16;E:/msys64/mingw64/bin/../include/webp
+SDL2_IMG_LDFLAGS:INTERNAL=-LE:/msys64/mingw64/bin/../lib;-lSDL2_image;-lmingw32;-mwindows;-lSDL2main;-lSDL2
+SDL2_IMG_LDFLAGS_OTHER:INTERNAL=-mwindows
+SDL2_IMG_LIBDIR:INTERNAL=E:/msys64/mingw64/bin/../lib
+SDL2_IMG_LIBRARIES:INTERNAL=SDL2_image;mingw32;SDL2main;SDL2
+SDL2_IMG_LIBRARY_DIRS:INTERNAL=E:/msys64/mingw64/bin/../lib
+SDL2_IMG_LIBS:INTERNAL=
+SDL2_IMG_LIBS_L:INTERNAL=
+SDL2_IMG_LIBS_OTHER:INTERNAL=
+SDL2_IMG_LIBS_PATHS:INTERNAL=
+SDL2_IMG_MODULE_NAME:INTERNAL=SDL2_image
+SDL2_IMG_PREFIX:INTERNAL=E:/msys64/mingw64/bin/..
+SDL2_IMG_SDL2_image_INCLUDEDIR:INTERNAL=
+SDL2_IMG_SDL2_image_LIBDIR:INTERNAL=
+SDL2_IMG_SDL2_image_PREFIX:INTERNAL=
+SDL2_IMG_SDL2_image_VERSION:INTERNAL=
+SDL2_IMG_STATIC_CFLAGS:INTERNAL=-IE:/msys64/mingw64/bin/../include/SDL2;-IE:/msys64/mingw64/bin/../include;-Dmain=SDL_main;-IE:/msys64/mingw64/bin/../include/libpng16;-DHWY_SHARED_DEFINE;-IE:/msys64/mingw64/bin/../include/webp;-DLIBDEFLATE_DLL;-DJXL_STATIC_DEFINE;-ULIBDEFLATE_DLL
+SDL2_IMG_STATIC_CFLAGS_I:INTERNAL=
+SDL2_IMG_STATIC_CFLAGS_OTHER:INTERNAL=-Dmain=SDL_main;-DHWY_SHARED_DEFINE;-DLIBDEFLATE_DLL;-DJXL_STATIC_DEFINE;-ULIBDEFLATE_DLL
+SDL2_IMG_STATIC_INCLUDE_DIRS:INTERNAL=E:/msys64/mingw64/bin/../include/SDL2;E:/msys64/mingw64/bin/../include;E:/msys64/mingw64/bin/../include/libpng16;E:/msys64/mingw64/bin/../include/webp
+SDL2_IMG_STATIC_LDFLAGS:INTERNAL=-LE:/msys64/mingw64/bin/../lib;-lSDL2_image;-lmingw32;-mwindows;-lSDL2main;-lSDL2;-lmingw32;-mwindows;-lSDL2main;-lSDL2;-lm;-luser32;-lgdi32;-lwinmm;-limm32;-lole32;-loleaut32;-lversion;-luuid;-ladvapi32;-lsetupapi;-lshell32;-ldinput8;-LE:/msys64/mingw64/bin/../lib;-lpng16;-lz;-LE:/msys64/mingw64/bin/../lib;-lz;-ljxl;-lm;-LE:/msys64/mingw64/bin/../lib;-lhwy;-lbrotlicommon;-lbrotlienc;-LE:/msys64/mingw64/bin/../lib;-lbrotlicommon;-lbrotlidec;-LE:/msys64/mingw64/bin/../lib;-lbrotlicommon;-llcms2;-lm;-pthread;-ljpeg;-ltiff;-lwebp;-lLerc;-ljbig;-LE:/msys64/mingw64/bin/../lib;-LE:/msys64/mingw64/bin/../lib;-lsharpyuv;-lzstd;-llzma;-ljpeg;-ldeflate;-lz;-lwebp;-LE:/msys64/mingw64/bin/../lib;-lsharpyuv
+SDL2_IMG_STATIC_LDFLAGS_OTHER:INTERNAL=-mwindows;-mwindows;-pthread
+SDL2_IMG_STATIC_LIBDIR:INTERNAL=
+SDL2_IMG_STATIC_LIBRARIES:INTERNAL=SDL2_image;mingw32;SDL2main;SDL2;mingw32;SDL2main;SDL2;m;user32;gdi32;winmm;imm32;ole32;oleaut32;version;uuid;advapi32;setupapi;shell32;dinput8;png16;z;z;jxl;m;hwy;brotlicommon;brotlienc;brotlicommon;brotlidec;brotlicommon;lcms2;m;jpeg;tiff;webp;Lerc;jbig;sharpyuv;zstd;lzma;jpeg;deflate;z;webp;sharpyuv
+SDL2_IMG_STATIC_LIBRARY_DIRS:INTERNAL=E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib
+SDL2_IMG_STATIC_LIBS:INTERNAL=
+SDL2_IMG_STATIC_LIBS_L:INTERNAL=
+SDL2_IMG_STATIC_LIBS_OTHER:INTERNAL=
+SDL2_IMG_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_IMG_VERSION:INTERNAL=2.6.3
+SDL2_INCLUDEDIR:INTERNAL=E:/msys64/mingw64/bin/../include
+SDL2_INCLUDE_DIRS:INTERNAL=E:/msys64/mingw64/bin/../include;E:/msys64/mingw64/bin/../include/SDL2
+SDL2_LDFLAGS:INTERNAL=-LE:/msys64/mingw64/bin/../lib;-lmingw32;-mwindows;-lSDL2main;-lSDL2
+SDL2_LDFLAGS_OTHER:INTERNAL=-mwindows
+SDL2_LIBDIR:INTERNAL=E:/msys64/mingw64/bin/../lib
+SDL2_LIBRARIES:INTERNAL=mingw32;SDL2main;SDL2
+SDL2_LIBRARY_DIRS:INTERNAL=E:/msys64/mingw64/bin/../lib
 SDL2_LIBS:INTERNAL=
 SDL2_LIBS_L:INTERNAL=
 SDL2_LIBS_OTHER:INTERNAL=
 SDL2_LIBS_PATHS:INTERNAL=
-SDL2_MODULE_NAME:INTERNAL=
-//ADVANCED property for variable: SDL2_NO_DEFAULT_PATH
-SDL2_NO_DEFAULT_PATH-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SDL2_PATH
-SDL2_PATH-ADVANCED:INTERNAL=1
-SDL2_PREFIX:INTERNAL=
-SDL2_STATIC_CFLAGS:INTERNAL=
+SDL2_MODULE_NAME:INTERNAL=sdl2
+SDL2_PREFIX:INTERNAL=E:/msys64/mingw64/bin/..
+SDL2_STATIC_CFLAGS:INTERNAL=-IE:/msys64/mingw64/bin/../include;-IE:/msys64/mingw64/bin/../include/SDL2;-Dmain=SDL_main
 SDL2_STATIC_CFLAGS_I:INTERNAL=
-SDL2_STATIC_CFLAGS_OTHER:INTERNAL=
+SDL2_STATIC_CFLAGS_OTHER:INTERNAL=-Dmain=SDL_main
+SDL2_STATIC_INCLUDE_DIRS:INTERNAL=E:/msys64/mingw64/bin/../include;E:/msys64/mingw64/bin/../include/SDL2
+SDL2_STATIC_LDFLAGS:INTERNAL=-LE:/msys64/mingw64/bin/../lib;-lmingw32;-mwindows;-lSDL2main;-lSDL2;-lmingw32;-mwindows;-lSDL2main;-lSDL2;-lm;-luser32;-lgdi32;-lwinmm;-limm32;-lole32;-loleaut32;-lversion;-luuid;-ladvapi32;-lsetupapi;-lshell32;-ldinput8
+SDL2_STATIC_LDFLAGS_OTHER:INTERNAL=-mwindows;-mwindows
 SDL2_STATIC_LIBDIR:INTERNAL=
+SDL2_STATIC_LIBRARIES:INTERNAL=mingw32;SDL2main;SDL2;mingw32;SDL2main;SDL2;m;user32;gdi32;winmm;imm32;ole32;oleaut32;version;uuid;advapi32;setupapi;shell32;dinput8
+SDL2_STATIC_LIBRARY_DIRS:INTERNAL=E:/msys64/mingw64/bin/../lib
 SDL2_STATIC_LIBS:INTERNAL=
 SDL2_STATIC_LIBS_L:INTERNAL=
 SDL2_STATIC_LIBS_OTHER:INTERNAL=
 SDL2_STATIC_LIBS_PATHS:INTERNAL=
-SDL2_VERSION:INTERNAL=
+SDL2_TTF_CFLAGS:INTERNAL=-IE:/msys64/mingw64/bin/../include/SDL2;-IE:/msys64/mingw64/bin/../include;-Dmain=SDL_main;-IE:/msys64/mingw64/bin/../include/harfbuzz;-IE:/msys64/mingw64/bin/../include/freetype2;-IE:/msys64/mingw64/bin/../include/libpng16;-IE:/msys64/mingw64/bin/../include/glib-2.0;-IE:/msys64/mingw64/bin/../lib/glib-2.0/include
+SDL2_TTF_CFLAGS_I:INTERNAL=
+SDL2_TTF_CFLAGS_OTHER:INTERNAL=-Dmain=SDL_main
+SDL2_TTF_FOUND:INTERNAL=1
+SDL2_TTF_INCLUDEDIR:INTERNAL=E:/msys64/mingw64/bin/../include
+SDL2_TTF_INCLUDE_DIRS:INTERNAL=E:/msys64/mingw64/bin/../include/SDL2;E:/msys64/mingw64/bin/../include;E:/msys64/mingw64/bin/../include/harfbuzz;E:/msys64/mingw64/bin/../include/freetype2;E:/msys64/mingw64/bin/../include/libpng16;E:/msys64/mingw64/bin/../include/glib-2.0;E:/msys64/mingw64/bin/../lib/glib-2.0/include
+SDL2_TTF_LDFLAGS:INTERNAL=-LE:/msys64/mingw64/bin/../lib;-lSDL2_ttf;-lmingw32;-mwindows;-lSDL2main;-lSDL2
+SDL2_TTF_LDFLAGS_OTHER:INTERNAL=-mwindows
+SDL2_TTF_LIBDIR:INTERNAL=E:/msys64/mingw64/bin/../lib
+SDL2_TTF_LIBRARIES:INTERNAL=SDL2_ttf;mingw32;SDL2main;SDL2
+SDL2_TTF_LIBRARY_DIRS:INTERNAL=E:/msys64/mingw64/bin/../lib
+SDL2_TTF_LIBS:INTERNAL=
+SDL2_TTF_LIBS_L:INTERNAL=
+SDL2_TTF_LIBS_OTHER:INTERNAL=
+SDL2_TTF_LIBS_PATHS:INTERNAL=
+SDL2_TTF_MODULE_NAME:INTERNAL=SDL2_ttf
+SDL2_TTF_PREFIX:INTERNAL=E:/msys64/mingw64/bin/..
+SDL2_TTF_SDL2_ttf_INCLUDEDIR:INTERNAL=
+SDL2_TTF_SDL2_ttf_LIBDIR:INTERNAL=
+SDL2_TTF_SDL2_ttf_PREFIX:INTERNAL=
+SDL2_TTF_SDL2_ttf_VERSION:INTERNAL=
+SDL2_TTF_STATIC_CFLAGS:INTERNAL=-IE:/msys64/mingw64/bin/../include/SDL2;-IE:/msys64/mingw64/bin/../include;-Dmain=SDL_main;-IE:/msys64/mingw64/bin/../include/harfbuzz;-IE:/msys64/mingw64/bin/../include/freetype2;-IE:/msys64/mingw64/bin/../include/libpng16;-IE:/msys64/mingw64/bin/../include/glib-2.0;-IE:/msys64/mingw64/bin/../lib/glib-2.0/include
+SDL2_TTF_STATIC_CFLAGS_I:INTERNAL=
+SDL2_TTF_STATIC_CFLAGS_OTHER:INTERNAL=-Dmain=SDL_main
+SDL2_TTF_STATIC_INCLUDE_DIRS:INTERNAL=E:/msys64/mingw64/bin/../include/SDL2;E:/msys64/mingw64/bin/../include;E:/msys64/mingw64/bin/../include/harfbuzz;E:/msys64/mingw64/bin/../include/freetype2;E:/msys64/mingw64/bin/../include/libpng16;E:/msys64/mingw64/bin/../include/glib-2.0;E:/msys64/mingw64/bin/../lib/glib-2.0/include
+SDL2_TTF_STATIC_LDFLAGS:INTERNAL=-LE:/msys64/mingw64/bin/../lib;-lSDL2_ttf;-lmingw32;-mwindows;-lSDL2main;-lSDL2;-lmingw32;-mwindows;-lSDL2main;-lSDL2;-lm;-luser32;-lgdi32;-lwinmm;-limm32;-lole32;-loleaut32;-lversion;-luuid;-ladvapi32;-lsetupapi;-lshell32;-ldinput8;-LE:/msys64/mingw64/bin/../lib;-lm;-lusp10;-lgdi32;-lrpcrt4;-LE:/msys64/mingw64/bin/../lib;-lbz2;-LE:/msys64/mingw64/bin/../lib;-lz;-lz;-LE:/msys64/mingw64/bin/../lib;-lz;-LE:/msys64/mingw64/bin/../lib;-lbrotlicommon;-lglib-2.0;-lintl;-lws2_32;-lole32;-lwinmm;-lshlwapi;-luuid;-lm;-LE:/msys64/mingw64/bin/../lib;-lpcre2-8;-lfreetype;-lbz2;-LE:/msys64/mingw64/bin/../lib;-lz;-lpng16;-lz;-LE:/msys64/mingw64/bin/../lib;-lz;-lharfbuzz;-lm;-lusp10;-lgdi32;-lrpcrt4;-LE:/msys64/mingw64/bin/../lib;-lglib-2.0;-lintl;-lws2_32;-lole32;-lwinmm;-lshlwapi;-luuid;-lm;-LE:/msys64/mingw64/bin/../lib;-lpcre2-8;-lgraphite2;-lbrotlidec;-LE:/msys64/mingw64/bin/../lib;-lbrotlicommon
+SDL2_TTF_STATIC_LDFLAGS_OTHER:INTERNAL=-mwindows;-mwindows
+SDL2_TTF_STATIC_LIBDIR:INTERNAL=
+SDL2_TTF_STATIC_LIBRARIES:INTERNAL=SDL2_ttf;mingw32;SDL2main;SDL2;mingw32;SDL2main;SDL2;m;user32;gdi32;winmm;imm32;ole32;oleaut32;version;uuid;advapi32;setupapi;shell32;dinput8;m;usp10;gdi32;rpcrt4;bz2;z;z;z;brotlicommon;glib-2.0;intl;ws2_32;ole32;winmm;shlwapi;uuid;m;pcre2-8;freetype;bz2;z;png16;z;z;harfbuzz;m;usp10;gdi32;rpcrt4;glib-2.0;intl;ws2_32;ole32;winmm;shlwapi;uuid;m;pcre2-8;graphite2;brotlidec;brotlicommon
+SDL2_TTF_STATIC_LIBRARY_DIRS:INTERNAL=E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib;E:/msys64/mingw64/bin/../lib
+SDL2_TTF_STATIC_LIBS:INTERNAL=
+SDL2_TTF_STATIC_LIBS_L:INTERNAL=
+SDL2_TTF_STATIC_LIBS_OTHER:INTERNAL=
+SDL2_TTF_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_TTF_VERSION:INTERNAL=2.20.2
+SDL2_VERSION:INTERNAL=2.26.5
+SDL2_sdl2_INCLUDEDIR:INTERNAL=
+SDL2_sdl2_LIBDIR:INTERNAL=
+SDL2_sdl2_PREFIX:INTERNAL=
+SDL2_sdl2_VERSION:INTERNAL=
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+__pkg_config_arguments_SDL2:INTERNAL=REQUIRED;sdl2
+__pkg_config_arguments_SDL2_IMG:INTERNAL=REQUIRED;SDL2_image
+__pkg_config_arguments_SDL2_TTF:INTERNAL=REQUIRED;SDL2_ttf
 __pkg_config_checked_SDL2:INTERNAL=1
-__pkg_config_checked_SDL2IMAGE:INTERNAL=1
+__pkg_config_checked_SDL2_IMG:INTERNAL=1
+__pkg_config_checked_SDL2_TTF:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_IMG_SDL2
+pkgcfg_lib_SDL2_IMG_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_IMG_SDL2_image
+pkgcfg_lib_SDL2_IMG_SDL2_image-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_IMG_SDL2main
+pkgcfg_lib_SDL2_IMG_SDL2main-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_IMG_mingw32
+pkgcfg_lib_SDL2_IMG_mingw32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_SDL2
+pkgcfg_lib_SDL2_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_SDL2main
+pkgcfg_lib_SDL2_SDL2main-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_SDL2
+pkgcfg_lib_SDL2_TTF_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_SDL2_ttf
+pkgcfg_lib_SDL2_TTF_SDL2_ttf-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_SDL2main
+pkgcfg_lib_SDL2_TTF_SDL2main-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_TTF_mingw32
+pkgcfg_lib_SDL2_TTF_mingw32-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_mingw32
+pkgcfg_lib_SDL2_mingw32-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=E:/msys64/mingw64/bin/../lib
 

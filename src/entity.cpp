@@ -1,7 +1,7 @@
 #include "../include/entity.hpp"
 
-Entity::Entity(Vector2f position, Vector2f movementVector, float width, float height, int textureId)
-: position(position), movementVector(movementVector), width(width), height(height), textureId(textureId) {
+Entity::Entity(Vector2f position, Vector2f movementVector, float width, float height, int textureId, float speedMultiplier)
+: position(position), movementVector(movementVector), width(width), height(height), textureId(textureId), speedMultiplier(speedMultiplier) {
 }
 
 void Entity::move() {

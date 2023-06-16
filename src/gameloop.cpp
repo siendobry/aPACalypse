@@ -1,8 +1,10 @@
 #include <iostream>
 #include <random>
+#include <algorithm>
 #include <SDL_image.h>
 #include "../include/gameloop.hpp"
 #include "../include/defs.hpp"
+#include "../include/vector.hpp"
 
 
 void GameLoop::init() {
@@ -15,6 +17,7 @@ void GameLoop::init() {
     enemyHp = ENEMY_HP;
     enemySpeedMultiplier = ENEMY_SPEED_MULTIPLIER;
     bulletSpeedMultiplier = BULLET_SPEED_MULTIPLIER;
+    score = 0;
 }
 
 void GameLoop::spawnEnemy() {
@@ -45,9 +48,11 @@ bool GameLoop::next(SDL_Event* e) {
                     break;
                 case SDLK_a:
                     player.addMovementVector(Vector2f(-1.0f, 0.0f));
+                    player.setFacingDirection(SDL_FLIP_HORIZONTAL);
                     break;
                 case SDLK_d:
                     player.addMovementVector(Vector2f(1.0f, 0.0f));
+                    player.setFacingDirection(SDL_FLIP_NONE);
                     break;
                 case SDLK_ESCAPE:
                     gamePaused = !gamePaused;
@@ -70,8 +75,12 @@ bool GameLoop::next(SDL_Event* e) {
             }
         } else if (e->type == SDL_MOUSEBUTTONDOWN && e->button.button == SDL_BUTTON_LEFT && player.getAmmo() > 0) {
             player.decrementAmmo();
-            Vector2f initialPosition = add(player.getPosition(), GUN_POSITION_FIX);
-            Vector2f bulletMovementVector = subtract(Vector2f(e->button.x, e->button.y), player.getPosition());
+            Vector2f initialPosition = player.getPosition();
+            if (player.getFacingDirection() == SDL_FLIP_NONE) {
+                initialPosition = add(std::move(initialPosition), GUN_POSITION_FIX_HORIZONTAL);
+            }
+            initialPosition = add(std::move(initialPosition), GUN_POSITION_FIX_VERTICAL);
+            Vector2f bulletMovementVector = subtract(Vector2f(e->button.x, e->button.y), std::move(initialPosition));
             bullets.emplace_back(initialPosition, bulletMovementVector.getNormalized(), BULLET_SPEED_MULTIPLIER);
         }
     }
@@ -79,6 +88,7 @@ bool GameLoop::next(SDL_Event* e) {
     player.move();
     for (Enemy& enemy : enemies) {
         Vector2f enemyToPlayerVector = subtract(player.getPosition(), enemy.getPosition());
+        enemy.setFacingDirection(enemyToPlayerVector);
         enemy.move(enemyToPlayerVector.getNormalized());
     }
     for (Bullet& bullet : bullets) {
@@ -116,11 +126,15 @@ bool GameLoop::next(SDL_Event* e) {
     return true;
 }
 
-std::vector<Entity> GameLoop::getEntities() {
-    std::vector<Entity> entities;
+std::vector<Entity*> GameLoop::getEntities() {
+    std::vector<Entity*> entities;
     entities.reserve(1 + enemies.size() + bullets.size());
-    entities.insert(entities.end(), player);
-    entities.insert(entities.end(), enemies.begin(), enemies.end());
-    entities.insert(entities.end(), bullets.begin(), bullets.end());
+    entities.insert(entities.end(), &player);
+    for (auto &enemy : enemies) {
+        entities.insert(entities.end(), &enemy);
+    }
+    for (auto &bullet : bullets) {
+        entities.insert(entities.end(), &bullet);
+    }
     return entities;
 }

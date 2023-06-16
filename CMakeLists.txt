@@ -3,17 +3,34 @@ project(apacalypse)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SDL2_PATH "E:\\libs\\SDL")
-set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/)
-list(APPEND CMAKE_PREFIX_PATH "E:\\libs\\SDL\\libs\\cmake")
+#set(SDL2_PATH "E:\\libs\\SDL")
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
-find_package(SDL2 REQUIRED)
-find_package(SDL2_image REQUIRED)
-find_package(SDL2_ttf REQUIRED)
-find_package(SDL2_mixer REQUIRED)
+#find_package(SDL2 REQUIRED)
+#find_package(SDL2_image REQUIRED)
+#find_package(SDL2_ttf REQUIRED)
 
-include_directories(${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR} ${SDL2_MIXER_INCLUDE_DIR})
+INCLUDE(FindPkgConfig)
 
-add_executable(${PROJECT_NAME} main.cpp include/defs.hpp include/entity.hpp include/vector.hpp include/gameloop.hpp src/entity.cpp src/vector.cpp src/gameloop.cpp include/app.hpp src/app.cpp include/player.hpp src/player.cpp include/bullet.hpp src/bullet.cpp src/enemy.cpp include/enemy.hpp)
+pkg_check_modules(SDL2 REQUIRED sdl2)
+pkg_check_modules(SDL2_IMG REQUIRED SDL2_image)
+pkg_check_modules(SDL2_TTF REQUIRED SDL2_ttf)
 
-target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES} ${SDL2_TTF_LIBRARIES} ${SDL2_MIXER_LIBRARIES})
+#include_directories(${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR})
+
+include_directories(${SDL2_INCLUDE_DIRS}
+        ${SDL2_IMG_INCLUDE_DIRS}
+        ${SDL2_TTF_INCLUDE_DIRS})
+
+link_directories (${SDL2_LIBRARY_DIRS}
+        ${SDL2_IMG_LIBRARY_DIRS}
+        ${SDL2_TTF_LIBRARY_DIRS})
+
+add_executable(${PROJECT_NAME} main.cpp include/defs.hpp include/entity.hpp include/vector.hpp include/gameloop.hpp src/entity.cpp src/vector.cpp src/gameloop.cpp include/app.hpp src/app.cpp include/player.hpp src/player.cpp include/bullet.hpp src/bullet.cpp src/enemy.cpp include/enemy.hpp include/button.hpp include/text.hpp src/text.cpp)
+
+#target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_TTF_LIBRARY} -lmingw32 -lSDL2main -lSDL2 -lSDL2image -SDL2ttf -mwindows)
+
+target_link_libraries (apacalypse
+        ${SDL2_LIBRARIES}
+        ${SDL2_IMG_LIBRARIES}
+        ${SDL2_TTF_LIBRARIES})

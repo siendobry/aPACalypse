@@ -4,7 +4,7 @@
 #include "../include/vector.hpp"
 
 Bullet::Bullet(Vector2f position, Vector2f movementVector, float speedMultiplier)
-: Entity(position, movementVector, BULLET_WIDTH, BULLET_HEIGHT, BULLET_TEXTURE), speedMultiplier(speedMultiplier) {
+: Entity(position, movementVector, BULLET_WIDTH, BULLET_HEIGHT, BULLET_TEXTURE, speedMultiplier) {
 }
 
 void Bullet::move() {

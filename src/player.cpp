@@ -1,8 +1,8 @@
 #include "../include/defs.hpp"
 #include "../include/player.hpp"
 
-Player::Player(Vector2f position, Vector2f movementVector, int ammo)
-: Entity(position, movementVector, PLAYER_WIDTH, PLAYER_HEIGHT, PLAYER_TEXTURE), ammo(ammo) {
+Player::Player(Vector2f position, Vector2f movementVector, int ammo, float speedMultiplier)
+: Entity(position, movementVector, PLAYER_WIDTH, PLAYER_HEIGHT, PLAYER_TEXTURE, speedMultiplier), ammo(ammo) {
 }
 
 void Player::move() {

@@ -2,7 +2,6 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>
-#include <SDL_mixer.h>
 #include <filesystem>
 #include <Windows.h>
 #include "include/defs.hpp"
@@ -17,29 +16,47 @@ int main(int argc, char* argv[]) {
     freopen("CONOUT$", "w", stdout);
 
     App app = App();
-    int imgFlags = IMG_INIT_PNG;
-    if( !( IMG_Init( imgFlags ) & imgFlags ) )
-    {
-        printf( "SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError() );
-    }
 
     if (!app.init()) {
         std::cout << "Failed to initialize an application!" << std::endl;
     } else {
-        if (!app.loadTextures()) {
-            std::cout << "Failed to load textures!" << std::endl;
+        if (!app.loadResources()) {
+            std::cout << "Failed to load entityTextures!" << std::endl;
         } else {
-            GameLoop loop = GameLoop();
-            loop.init();
-            loop.setEnemySpeedMultiplier(ENEMY_SPEED_MULTIPLIER);
-            loop.setBulletSpeedMultiplier(BULLET_SPEED_MULTIPLIER);
-
             SDL_Event e;
-            bool continueExecution = loop.next(&e);
-            while (continueExecution) {
-                continueExecution = loop.next(&e);
+            while (true) {
+                App::AppState mainMenuOutput = App::NOTHING;
+                app.clear();
+                app.renderMainMenu();
+                while (mainMenuOutput == App::NOTHING) {
+                    mainMenuOutput = app.handleState(&e);
+                }
+                if (mainMenuOutput == App::ESCAPE) {
+                    return 0;
+                }
 
-                app.render(loop.getEntities());
+                GameLoop loop = GameLoop();
+                loop.init();
+                loop.setEnemySpeedMultiplier(ENEMY_SPEED_MULTIPLIER);
+                loop.setBulletSpeedMultiplier(BULLET_SPEED_MULTIPLIER);
+
+                bool continueExecution = loop.next(&e);
+                while (continueExecution) {
+                    continueExecution = loop.next(&e);
+                    app.clear();
+                    app.renderEntities(loop.getEntities());
+                    app.renderGameInfo(loop.getAmmo(), loop.getScore());
+                }
+
+                App::AppState endScreenOutput = App::NOTHING;
+                app.clear();
+                app.renderEndScreen(loop.getScore());
+                while (endScreenOutput == App::NOTHING) {
+                    endScreenOutput = app.handleState(&e);
+                }
+                if (endScreenOutput == App::ESCAPE) {
+                    return 0;
+                }
             }
         }
     }
